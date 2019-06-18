@@ -93,7 +93,7 @@ e,3,b,,,`)
 		t.Fatalf("expected second sample %v, got %v", expected, samples[1])
 	}
 
-	b = bytes.NewBufferString(`foo,BAR,Baz
+	b = bytes.NewBufferString(`FOO,BAR,BAZ
 f,1,baz
 e,BAD_INPUT,b`)
 	d = newSimpleDecoderFromReader(b)
